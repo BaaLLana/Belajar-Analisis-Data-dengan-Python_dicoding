@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
  
 @st.cache_data  
 def load_data():
-    df_all = pd.read_csv("../clean_df_all.csv")
+    df_all = pd.read_csv("dashboard/clean_df_all.csv")
     df_Aotizhongxin = pd.read_csv("Air-quality-dataset/PRSA_Data_Aotizhongxin_20130301-20170228.csv")
     df_Changping = pd.read_csv("Air-quality-dataset\PRSA_Data_Changping_20130301-20170228.csv")
     df_Dingling = pd.read_csv("Air-quality-dataset\PRSA_Data_Dingling_20130301-20170228.csv")
@@ -24,7 +24,7 @@ def load_data():
     return df_all, df_Aotizhongxin, df_Changping, df_Dingling, df_Dongsi, df_Guanyuan, df_Gucheng, df_Huairou, df_Nongzhanguan, df_Shunyi, df_Tiantan, df_Wanliu, df_Wanshouxigong
 
 
-st.sidebar.image("../images/logo.png")
+st.sidebar.image("images/logo.png")
 st.sidebar.title("Menu Navigasi")
 menu = st.sidebar.selectbox("Pilih Menu:", ["Home","Lihat Dataset", "Pertanyaan Satu", "Pertanyaan Dua", "Pertanyaan Tiga", "Pertanyaan Empat", "Kesimpulan"])
 
